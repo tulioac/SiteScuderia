@@ -75,22 +75,22 @@
               </div>
               <!-- cd-timeline-img -->
               <div>
-              <div class="cd-timeline-content">
+                <div class="cd-timeline-content">
 
-                <button class="uk-button uk-button-default" type="button" uk-toggle="target: #modal-close-outside1">Início</button>
-                <br>
+                  <button class="uk-button uk-button-default" type="button" uk-toggle="target: #modal-close-outside1">Início</button>
+                  <br>
 
-                <div id="modal-close-outside1" uk-modal>
-                  <div class="uk-modal-dialog uk-modal-body">
-                    <button class="uk-modal-close-outside" type="button" uk-close></button>
-                    <h2 class="uk-modal-title">Início</h2>
-                    
-                    <p>A Equipe Scuderia UFCG iniciou suas atividades, na Universidade Federal de Campina Grande, Paraíba. O projeto tem como objetivo o desenvolvimento de inovações tecnológicas e a construção de protótipos tipo Fórmula, propiciando oportunidades
-                      de aplicações práticas de estudantes de engenharia.</p>
+                  <div id="modal-close-outside1" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body">
+                      <button class="uk-modal-close-outside" type="button" uk-close></button>
+                      <h2 class="uk-modal-title">Início</h2>
+
+                      <p>A Equipe Scuderia UFCG iniciou suas atividades, na Universidade Federal de Campina Grande, Paraíba. O projeto tem como objetivo o desenvolvimento de inovações tecnológicas e a construção de protótipos tipo Fórmula, propiciando oportunidades
+                        de aplicações práticas de estudantes de engenharia.</p>
+                    </div>
                   </div>
+                  <span class="cd-date">2013</span>
                 </div>
-                <span class="cd-date">2013</span>
-              </div>
               </div>
               <!-- cd-timeline-content -->
             </div>
@@ -150,19 +150,19 @@
               <div class="cd-timeline-img cd-location">
               </div>
               <!-- cd-timeline-img -->
-              
+
               <div class="cd-timeline-content">
 
                 <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-close-outside4">Nova tentativa</button>
                 <br>
 
-                  <div id="modal-close-outside4" uk-modal>
-                    <div class="uk-modal-dialog uk-modal-body">
-                      <button class="uk-modal-close-outside" type="button" uk-close></button>
-                      <h2 class="uk-modal-title">Nova tentativa</h2>
-                      <p>A equipe participou da 14ª Competição de Fórmula SAE Brasil e terminou na 27ª colocação, dentre 51 competidores.</p>
-                    </div>
+                <div id="modal-close-outside4" uk-modal>
+                  <div class="uk-modal-dialog uk-modal-body">
+                    <button class="uk-modal-close-outside" type="button" uk-close></button>
+                    <h2 class="uk-modal-title">Nova tentativa</h2>
+                    <p>A equipe participou da 14ª Competição de Fórmula SAE Brasil e terminou na 27ª colocação, dentre 51 competidores.</p>
                   </div>
+                </div>
                 <span class="cd-date">2017</span>
 
               </div>
@@ -1546,7 +1546,7 @@
             <h3>
               <a href="#offcanvas-usage" uk-toggle>Seja nosso patrocinador ou fale conosco!</a>
             </h3>
- 
+
             <div id="offcanvas-usage" uk-offcanvas="mode: reveal">
               <div class="uk-offcanvas-bar">
 
@@ -1554,38 +1554,39 @@
 
                 <h3 class="centro">Contate-nos</h3>
 
-                <form>
+                <form accept-charset="utf-8" action="https://formspree.io/scuderia.ufcg@gmail.com" method="POST">
 
                   <div class="uk-margin">
                     <div class="uk-inline">
                       <span class="uk-form-icon" uk-icon="icon: user"></span>
-                      <input class="uk-input" type="text" placeholder="Nome" size=25>
+                      <input name="nome" class="uk-input" type="text" placeholder="Nome" required="" size=25 >
                     </div>
                   </div>
 
                   <div class="uk-margin">
                     <div class="uk-inline">
                       <span class="uk-form-icon" uk-icon="icon: mail"></span>
-                      <input class="uk-input" type="text" placeholder="Email" size=25>
+                      <input name="email" class="uk-input" type="text" placeholder="Email" required="" size=25 >
                     </div>
                   </div>
 
                   <div class="uk-margin">
                     <div class="uk-inline">
                       <span class="uk-form-icon" uk-icon="icon: commenting"></span>
-                      <input class="uk-input" type="text" placeholder="Assunto" size=25>
+                      <input name="assunto" class="uk-input" type="text" placeholder="Assunto" required="" size=25 >
                     </div>
                   </div>
 
                   <div class="uk-margin">
-                    <textarea class="uk-textarea" rows="5" placeholder="Sua mensagem" size=25></textarea>
+                    <textarea name="mensagem" class="uk-textarea" rows="5" placeholder="Sua mensagem" required="" size=25 ></textarea>
                   </div>
 
                   <div class="uk-margin centro">
-                    <button class="uk-button uk-button-default">Enviar</button>
+                    <input type="submit" value="Enviar" class="uk-button uk-button-default">
                   </div>
 
                 </form>
+
 
               </div>
             </div>
