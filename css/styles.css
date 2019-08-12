@@ -134,10 +134,6 @@ footer .footer-bottom {
     width: 100%;
 }
 
-img .diamante {
-    max-width: 262px;
-}
-
 .ouro {
     width: 50%;
 }
@@ -161,7 +157,6 @@ img .prata {
 img .bronze {
     max-width: 100px;
 }
-
 
 
 /* Timeline  */
