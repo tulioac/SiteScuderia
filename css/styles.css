@@ -124,9 +124,28 @@ footer .footer-bottom {
     border-radius: 5px;
 }
 
+/* Patrocínio */
+
 .categoria {
     color: #b3b3b3;
 }
+
+.diamante {
+    width: 100%;
+}
+
+img .diamante{
+    max-width: 262px;
+}
+
+.ouro {
+    width: 50%;
+}
+
+img .ouro{
+    max-width: 200px;
+}
+
 
 
 /* Timeline  */
