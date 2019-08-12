@@ -134,7 +134,7 @@ footer .footer-bottom {
     width: 100%;
 }
 
-img .diamante{
+img .diamante {
     max-width: 262px;
 }
 
@@ -142,8 +142,24 @@ img .diamante{
     width: 50%;
 }
 
-img .ouro{
+img .ouro {
     max-width: 200px;
+}
+
+.prata {
+    width: 25%;
+}
+
+img .prata {
+    max-width: 162px;
+}
+
+.bronze {
+    width: 25%;
+}
+
+img .bronze {
+    max-width: 100px;
 }
 
 
