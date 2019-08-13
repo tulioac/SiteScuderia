@@ -4574,7 +4574,7 @@
     bottom: auto;
   }
   .uk-tab-bottom > * > a {
-    border-top: 1px solid transparent;
+    border-top: 2px solid transparent;
     border-bottom: none;
   }
   /*
