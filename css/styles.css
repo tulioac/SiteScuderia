@@ -94,6 +94,10 @@ footer .footer-bottom {
     color: #fff;
 }
 
+.sombra {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
 .centro {
     text-align: center;
 }
@@ -118,6 +122,40 @@ footer .footer-bottom {
 .borda {
     border: solid white 4px;
     border-radius: 5px;
+}
+
+/* Patrocínio */
+
+.categoria {
+    color: #b3b3b3;
+}
+
+.diamante {
+    width: 100%;
+}
+
+.ouro {
+    width: 50%;
+}
+
+img .ouro {
+    max-width: 200px;
+}
+
+.prata {
+    width: 25%;
+}
+
+img .prata {
+    max-width: 162px;
+}
+
+.bronze {
+    width: 25%;
+}
+
+img .bronze {
+    max-width: 100px;
 }
 
 
