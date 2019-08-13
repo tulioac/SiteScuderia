@@ -45,6 +45,11 @@ footer .footer-bottom {
     width: 100%;
 }
 
+.container img {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 
 /* Utility Classes */
 
@@ -68,15 +73,6 @@ footer .footer-bottom {
     padding: 5px;
 }
 
-.espaco-lateral {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.margem {
-    margin: 20px;
-}
-
 .vertical-center {
     vertical-align: middle;
 }
@@ -98,10 +94,6 @@ footer .footer-bottom {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
 
-.centro {
-    text-align: center;
-}
-
 .grande {
     font-size: 2rem;
 }
@@ -112,6 +104,7 @@ footer .footer-bottom {
 
 .sem-margem {
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .icone {
@@ -123,6 +116,25 @@ footer .footer-bottom {
     border: solid white 4px;
     border-radius: 5px;
 }
+
+.circular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.circular :hover {}
+
+.texto-escuro {
+    color: #5774b5 !important;
+}
+
 
 /* Patrocínio */
 
@@ -138,24 +150,12 @@ footer .footer-bottom {
     width: 50%;
 }
 
-img .ouro {
-    max-width: 200px;
-}
-
 .prata {
     width: 25%;
 }
 
-img .prata {
-    max-width: 162px;
-}
-
 .bronze {
     width: 25%;
-}
-
-img .bronze {
-    max-width: 100px;
 }
 
 
@@ -441,22 +441,9 @@ img .bronze {
     position: absolute;
     z-index: 1;
     right: 5vw;
-
     width: 30vw;
     text-align: center;
     transition: all 1000ms;
-}
-
-.content .title {
-    font-size: 3rem;
-    margin-top: 1rem;
-    color: #fff;
-}
-
-.content .text {
-    line-height: 1.7;
-    margin-top: 1rem;
-    color: #fff;
 }
 
 
@@ -601,8 +588,8 @@ img .bronze {
     align-items: center;
     justify-content: center;
     border: 1px solid #5774b5;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
 
 .card .front {
@@ -634,15 +621,10 @@ img .bronze {
     background: rgba(0, 0, 0, 0.1);
     opacity: 0.8;
     border-radius: 0px 15px 15px 0px;
-
 }
 
 .metade {
     width: 50%;
-}
-
-.todo {
-    width: 100%;
 }
 
 @media screen and (min-width: 640px) {
@@ -663,14 +645,6 @@ img .bronze {
     }
 }
 
-.azul-claro {
-    background: #2196f3;
-}
-
-.azul-escuro {
-    background: #2962ff;
-}
-
 
 /* Hidden */
 
@@ -686,6 +660,7 @@ img .bronze {
     }
 }
 
+
 /* Webkit */
 
 input:-webkit-autofill,
@@ -697,4 +672,89 @@ input:-webkit-autofill:active {
 
 input:-webkit-autofill {
     -webkit-text-fill-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font: 300 1.25rem Nunito;
+    text-decoration: none;
+    color: #fff;
+}
+
+.container-botao {
+    min-width: 500px;
+    text-align: center;
+}
+
+a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+h1 {
+    font-size: 2em;
+    padding: 20px 0;
+}
+
+p {
+    font-size: .75em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px 0;
+}
+
+button:hover {
+    cursor: pointer
+}
+
+button {
+    background: transparent;
+    outline: none;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 15px 50px;
+    overflow: hidden;
+}
+
+
+/*button:before (attr data-hover)*/
+
+button:hover:before {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+button:before {
+    content: attr(data-hover);
+    position: absolute;
+    top: 1.1em;
+    left: 0;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: .8em;
+    opacity: 0;
+    transform: translate(-100%, 0);
+    transition: all .3s ease-in-out;
+}
+
+
+/*button div (button text before hover)*/
+
+button:hover div {
+    opacity: 0;
+    transform: translate(100%, 0)
+}
+
+button div {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: .8em;
+    transition: all .3s ease-in-out;
 }

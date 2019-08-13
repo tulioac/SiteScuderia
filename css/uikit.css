@@ -2427,9 +2427,7 @@
   .uk-grid {
     margin-left: -30px;
   }
-  .uk-grid > * {
-    padding-left: 30px;
-  }
+
   /* Vertical */
   .uk-grid + .uk-grid,
   .uk-grid > .uk-grid-margin,
