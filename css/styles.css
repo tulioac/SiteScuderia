@@ -112,6 +112,16 @@ footer .footer-bottom {
     border-radius: 5px;
 }
 
+.centro {
+    text-align: center;
+}
+
+.processo-seletivo {
+    color: #5774b5 !important;
+    font-weight: 500;
+    margin: 10px 10px 10px 10px;
+}
+
 .circular {
     display: flex;
     align-items: center;
@@ -124,7 +134,9 @@ footer .footer-bottom {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
 
-.circular :hover {}
+.circular :hover {
+
+}
 
 .texto-escuro {
     color: #5774b5 !important;
