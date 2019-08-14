@@ -136,18 +136,7 @@ button {
 	overflow:hidden;
 }
 
-button:before {
-	font-family: FontAwesome;
-	content:"\f11e";
-	position: absolute;
-	top: 11px;
-	left: -30px;
-	transition: all 200ms ease;
-}
 
-button:hover:before {
-	left: 7px;
-}
 
 /* Patrocínio */
 
