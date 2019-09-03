@@ -116,13 +116,8 @@ footer .footer-bottom {
     text-align: center;
 }
 
-.processo-seletivo {
-    color: #5774b5 !important;
-    font-weight: 500;
-    margin: 10px 10px 10px 10px;
-}
 
-button {
+#processo-seletivo button{
     border: 3px solid #fff;
     background: transparent;
     color: #fff;
@@ -136,7 +131,18 @@ button {
 	overflow:hidden;
 }
 
+#processo-seletivo button:before{
+	font-family: FontAwesome;
+	content:"\f11e";
+	position: absolute;
+	top: 11px;
+	left: -30px;
+	transition: all 200ms ease;
+}
 
+#processo-seletivo button:hover:before{
+	left: 7px;
+}
 
 /* Patrocínio */
 
